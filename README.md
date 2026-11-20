@@ -15,19 +15,33 @@ A production-grade distributed email job scheduler built for **ReachInbox.ai** t
 
 ---
 
+## 🌐 Live Deployment
+
+| Resource | Link |
+|---|---|
+| 🚀 **Live Application** | [https://reachinbox-email-schedular-frontend.vercel.app](https://reachinbox-email-schedular-frontend.vercel.app) |
+| ⚙️ **Backend API** | [https://reachinbox-email-schedular.onrender.com](https://reachinbox-email-schedular.onrender.com) |
+| 📊 **Bull Board Queue Dashboard** | [https://reachinbox-email-schedular.onrender.com/admin/queues](https://reachinbox-email-schedular.onrender.com/admin/queues) |
+| ❤️ **Health Check** | [https://reachinbox-email-schedular.onrender.com/api/health](https://reachinbox-email-schedular.onrender.com/api/health) |
+
+> **Cloud Infrastructure:** Frontend deployed on **Vercel**, Backend on **Render**, Database on **Neon (PostgreSQL)**, Queue on **Upstash (Redis)**.
+
+---
+
 ## 📑 Table of Contents
-1. [Architectural Overview](#-architectural-overview)
-2. [Key Engineering Highlights](#-key-engineering-highlights)
-3. [Tech Stack](#-tech-stack)
-4. [Project Structure](#-project-structure)
-5. [Quick Start & Setup Guide](#-quick-start--setup-guide)
-6. [Environment Variables](#-environment-variables)
-7. [How Scheduling & Persistence Work](#-how-scheduling--persistence-work)
-8. [How Rate Limiting & Concurrency Work](#-how-rate-limiting--concurrency-work)
-9. [Slack & Ethereal Integration](#-slack--ethereal-integration)
-10. [API Reference](#-api-reference)
-11. [Assumptions, Shortcuts & Trade-offs](#-assumptions-shortcuts--trade-offs)
-12. [Demo Video & Submission](#-demo-video--submission)
+1. [Live Deployment](#-live-deployment)
+2. [Architectural Overview](#-architectural-overview)
+3. [Key Engineering Highlights](#-key-engineering-highlights)
+4. [Tech Stack](#-tech-stack)
+5. [Project Structure](#-project-structure)
+6. [Quick Start & Setup Guide](#-quick-start--setup-guide)
+7. [Environment Variables](#-environment-variables)
+8. [How Scheduling & Persistence Work](#-how-scheduling--persistence-work)
+9. [How Rate Limiting & Concurrency Work](#-how-rate-limiting--concurrency-work)
+10. [Slack & Ethereal Integration](#-slack--ethereal-integration)
+11. [API Reference](#-api-reference)
+12. [Assumptions, Shortcuts & Trade-offs](#-assumptions-shortcuts--trade-offs)
+13. [Demo Video & Submission](#-demo-video--submission)
 
 ---
 
@@ -454,6 +468,11 @@ When a sender hits `MAX_EMAILS_PER_HOUR_PER_SENDER`:
 Granted access to reviewers:
 - `Mitrajit`
 - `Yadav036`
+
+### Live Links:
+- 🌐 **Frontend**: [https://reachinbox-email-schedular-frontend.vercel.app](https://reachinbox-email-schedular-frontend.vercel.app)
+- ⚙️ **Backend API**: [https://reachinbox-email-schedular.onrender.com](https://reachinbox-email-schedular.onrender.com)
+- 📊 **Bull Board Dashboard**: [https://reachinbox-email-schedular.onrender.com/admin/queues](https://reachinbox-email-schedular.onrender.com/admin/queues)
 
 ---
 *Developed with ❤️ for the ReachInbox Software Development Internship Assignment.*
