@@ -1,8 +1,10 @@
 import axios from 'axios';
 import type { Email, EmailStats, ScheduleEmailRequest } from '../types';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: `${API_BASE}/api`,
 });
 
 api.interceptors.request.use((config) => {

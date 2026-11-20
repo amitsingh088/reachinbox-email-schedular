@@ -1,8 +1,10 @@
 import { Mail, ArrowRight } from 'lucide-react';
 
 export default function Login() {
+  const API_URL = import.meta.env.VITE_API_URL || '';
+
   const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:5000/api/auth/google';
+    window.location.href = `${API_URL}/api/auth/google`;
   };
 
   return (
@@ -86,7 +88,7 @@ export default function Login() {
 
           <button
             onClick={() => {
-              window.location.href = 'http://localhost:5000/api/auth/dev-login';
+              window.location.href = `${API_URL}/api/auth/dev-login`;
             }}
             className="w-full flex items-center justify-center gap-2 px-6 py-2.5 bg-gray-100 border border-gray-200 rounded-xl text-gray-600 text-sm font-medium hover:bg-gray-200 transition-all duration-200"
           >
